@@ -7,10 +7,13 @@
     <input type="text" ng-model="newMessage" placeholder="Enter your message">
   </form>
 
-  <h4>Latest Chats:</h4>
-  <div class="jumbotron">
-    <p ng-repeat="m in messages" class="message-text">{{m.message}}</p>
-  </div>
-
+<div class="panel panel-primary text-panel">
+    <div class="panel-heading">
+        <h3 class="panel-title">Latest Chats:</h3>
+    </div>
+    <div class="panel-body">
+      <p ng-repeat="m in messages" class="message-text">{{m.message}}</p>
+    </div>
+</div>
 
 </div>
